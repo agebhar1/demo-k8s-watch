@@ -1,0 +1,16 @@
+# https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-features.html#production-ready-kubernetes-probes
+# https://docs.spring.io/spring-boot/docs/current/reference/html/deployment.html#cloud-deployment-kubernetes
+# https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-features.html#production-ready-kubernetes-probes-lifecycle
+management:
+  endpoint:
+    health:
+      probes:
+        enabled: true
+  endpoints:
+    web:
+      exposure:
+        include:
+          - info
+          - health
+          - prometheus
+          - startup
