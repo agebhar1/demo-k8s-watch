@@ -5,7 +5,7 @@ metadata:
     app: watch
   name: watch
 spec:
-  replicas: 5
+  replicas: 1
   revisionHistoryLimit: 10
   selector:
     app: watch
